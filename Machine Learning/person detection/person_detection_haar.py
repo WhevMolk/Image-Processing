@@ -25,15 +25,15 @@ with open("../data/A2/data/result.txt", 'w') as res:
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-        faces = casc_body_path.detectMultiScale(gray)
-        # Draw a rectangle around the faces
+        persons = casc_body_path.detectMultiScale(gray)
+        # Draw a rectangle around the person
         
-        if len(faces) == 0:
+        if len(persons) == 0:
             res.write("0\n")
         else:
             res.write("1\n")
             
-        #for (x, y, w, h) in faces:
+        #for (x, y, w, h) in persons:
         #    cv2.rectangle(img, (x, y), (x+w, y+h), (255, 255, 0 ), 2)
             
         
