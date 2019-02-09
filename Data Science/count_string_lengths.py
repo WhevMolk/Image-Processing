@@ -29,6 +29,6 @@ for txt in txt_files:
             length = len(" ".join(row)) - 17
             list[length] = list[length] + 1
         
-        print('b_test_gt.txt')
+        print(txt)
         print(list)
        
